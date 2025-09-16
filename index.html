@@ -45,7 +45,38 @@
         <div>
           <h1>ARJUN SAGAR YAMJALA</h1>
           <p class="subtitle">Assistant Dean (Placements & Internships) · Assistant Professor · Ph.D. (Machine Learning)</p>
-          <p class="small">Scopus ID: <code>59658674600</code> • ORCID: <a href="https://orcid.org/0009-0002-3777-3560" target="_blank">0009-0002-3777-3560</a></p>
+          <p class="small">Scopus ID: <a href="http://www.scopus.com/inward/authorDetails.url?authorID=59658674600&partnerID=MN8TOARS" target="_blank"><code>59658674600</code></a> • ORCID: <a href="https://orcid.org/0009-0002-3777-3560" target="_blank">0009-0002-3777-3560</a></p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="controls">
+          <a class="btn" onclick="window.print()">Print / Save PDF</a>
+          <a class="btn" style="background:#111" onclick="toggleTheme()">Toggle Dark</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- The rest of your content remains unchanged -->
+
+    <footer>Built from your uploaded resume. Edit or ask me to make it ATS-friendly.</footer>
+  </div>
+
+  <script>
+    function toggleTheme(){
+      const dark = document.documentElement.style.getPropertyValue('--bg') === '#0b0b0b';
+      if(!dark){
+        document.documentElement.style.setProperty('--bg','#0b0b0b');
+        document.body.style.background='#070707';
+        document.body.style.color='#e6eef9';
+      } else {
+        document.documentElement.style.setProperty('--bg','#f7f9fc');
+        document.body.style.background='var(--bg)';
+        document.body.style.color='#111';
+      }
+    }
+  </script>
+</body>
+</html> • ORCID: <a href="https://orcid.org/0009-0002-3777-3560" target="_blank">0009-0002-3777-3560</a></p>
         </div>
       </div>
       <div style="text-align:right">
