@@ -1,302 +1,136 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ARJUN SAGAR Y — Resume</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic profile and resume of Dr. Y. Arjun Sagar Yamjala, Assistant Professor in Computer Science and Engineering.">
+<title>Dr. Y. Arjun Sagar Yamjala | Academic Resume</title>
 <style>
-:root{--accent:#0b74de;--muted:#6b7280;--bg:#f7f9fc}
-*{box-sizing:border-box}
-body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;line-height:1.5;
-color:#111;background:var(--bg);padding:20px}
-.container{max-width:920px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 8px
-30px rgba(12,13,14,0.06);overflow:hidden}
-header{display:flex;gap:20px;padding:26px;background:linear-gradient(90deg,var(--accent),#1d
-a1f2);color:#fff;align-items:center}
-.photo img{width:96px;height:96px;border-radius:12px;object-fit:cover;border:3px solid rgba(
-255,255,255,0.12)}
-h1{margin:0;font-size:22px;letter-spacing:0.2px}
-p.subtitle{margin:4px 0 0;opacity:0.95}
-.grid{display:grid;grid-template-columns:1fr 340px}
-main{padding:22px}
-section{margin-bottom:16px}
-.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:8
-px}
-h2{margin:0;font-size:16px}
-.muted{color:var(--muted);font-size:13px}
-ul{padding-left:18px;margin:6px 0}
-.chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f5f9;margin:4p
-x 6px 4px 0;font-size:13px}
-.right-col{padding:22px;border-left:1px solid #f1f5f9;background:#fbfdff}
-.contact-row{display:flex;flex-direction:column;gap:8px}
-.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:
-#fff;text-decoration:none}
-.controls{display:flex;gap:8px;align-items:center}
-.search{width:100%;padding:8px;border-radius:8px;border:1px solid #e6eef9}
-footer{padding:12px;text-align:center;background:#fbfdff;color:var(--muted);font-size:13px}
-.link-btn{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:6px;
-background:#0a66c2;color:#fff;font-size:13px;text-decoration:none}
-.link-btn.orcid{background:#a6ce39;color:#023a01}
-.small{font-size:13px;color:var(--muted)}
-code{background:#f6f8fa;padding:4px 6px;border-radius:6px;font-size:13px}
-table{width:100%;border-collapse:collapse;margin-top:6px}
-td, th{padding:6px 8px;border-bottom:1px solid #f1f5f9;text-align:left;font-size:14px}
-.mono{font-family:monospace;font-size:13px;color:#374151}
-@media(max-width:880px){.grid{grid-template-columns:1fr}.right-col{border-left:none;border-t
-op:1px solid #f1f5f9}}
+:root{--accent:#155eef;--accent2:#0b3b8c;--ink:#172033;--muted:#5e6b82;--bg:#f3f6fb;--line:#e4eaf3;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.container{max-width:1120px;margin:28px auto;padding:0 18px}
+header{padding:34px clamp(20px,4vw,44px);border-radius:18px;background:linear-gradient(125deg,var(--accent2),var(--accent));color:#fff;box-shadow:0 14px 35px #102e5b20}
+.hero{display:flex;align-items:center;gap:24px}.photo img{width:112px;height:112px;object-fit:cover;border:3px solid #ffffff65;border-radius:18px}.hero-main{flex:1}h1{font-size:clamp(25px,4vw,36px);line-height:1.2;margin:0 0 9px}.subtitle{font-size:17px;margin:0 0 10px;color:#e8efff}.ids{font-size:13px;color:#e8efff}.ids a{color:white;text-decoration:underline}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{border:1px solid #ffffff70;padding:8px 13px;border-radius:9px;color:#fff;display:inline-block;background:#ffffff16;cursor:pointer;font:inherit;font-size:14px}.btn:hover{background:#ffffff2a;text-decoration:none}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;margin-top:20px}.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #1c315008}
+h2{font-size:19px;margin:0 0 13px;padding-bottom:9px;border-bottom:1px solid var(--line)}h3{font-size:16px;margin:12px 0 3px}.muted{color:var(--muted)}.role{margin:0 0 13px}.role:last-child{margin-bottom:0}.date{font-size:13px;color:var(--muted)}ul{padding-left:21px;margin:7px 0}li{margin:5px 0}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#edf3ff;color:#234b91;border:1px solid #dce8ff;border-radius:999px;padding:5px 10px;font-size:13px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:13px;color:var(--muted)}.contact-item{margin:0 0 13px;overflow-wrap:anywhere}.contact-item strong{display:block;font-size:13px;color:var(--muted)}.quicklinks a{display:block;padding:5px 0}.note{font-size:13px;color:var(--muted)}footer{text-align:center;padding:18px;color:var(--muted);font-size:13px}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.hero{align-items:flex-start}.photo img{width:84px;height:84px}}
+@media(max-width:520px){.hero{display:block}.photo{margin-bottom:15px}.container{padding:0 10px;margin:12px auto}.panel{padding:18px}header{border-radius:13px}}
+@media print{body{background:#fff;font-size:11pt}.container{max-width:none;margin:0;padding:0}header,.panel{box-shadow:none}.layout{grid-template-columns:2fr 1fr;gap:12px}.panel{break-inside:avoid;margin-bottom:10px}a{color:inherit}.actions{display:none}}
 </style>
 </head>
 <body>
 <div class="container">
 <header>
-<div style="flex:1;display:flex;gap:16px;align-items:center">
-<div class="photo"><img src="profile.png" alt="Arjun Sagar"></div>
-<div>
-<h1>ARJUN SAGAR YAMJALA</h1>
-<p class="subtitle">Assistant Dean (Placements & Internships) · Assistant Professor ·
-Ph.D. (Machine Learning)</p>
-<p class="small">Scopus ID: <a href="http://www.scopus.com/inward/authorDetails.url?au
-thorID=59658674600&partnerID=MN8TOARS" target="_blank"><code>59658674600</code></a> • ORCID: <a
-href="https://orcid.org/0009-0002-3777-3560" target="_blank">0009-0002-3777-3560</a></p>
-</div>
-</div>
-<div style="text-align:right">
-<div class="controls">
-<a class="btn" onclick="window.print()">Print / Save PDF</a>
-<a class="btn" style="background:#111" onclick="toggleTheme()">Toggle Dark</a>
+<div class="hero">
+<div class="photo"><img src="profile.png" alt="Dr. Y. Arjun Sagar Yamjala"></div>
+<div class="hero-main">
+<h1>Dr. Y. Arjun Sagar Yamjala</h1>
+<p class="subtitle">Assistant Professor · Department of Computer Science and Engineering · National Institute of Technology Patna</p>
+<div class="ids">ORCID: <a href="https://orcid.org/0009-0002-3777-3560" target="_blank" rel="noopener">0009-0002-3777-3560</a> &nbsp;|&nbsp; Scopus Author ID: <a href="https://www.scopus.com/authid/detail.uri?authorId=59658674600" target="_blank" rel="noopener">59658674600</a></div>
+<div class="actions"><button class="btn" onclick="window.print()">Print / Save as PDF</button><a class="btn" href="https://www.linkedin.com/in/arjun-sagar-y-a40915317/" target="_blank" rel="noopener">LinkedIn Profile</a><a class="btn" href="https://orcid.org/0009-0002-3777-3560" target="_blank" rel="noopener">ORCID Profile</a></div>
 </div>
 </div>
 </header>
-<!-- The rest of your content remains unchanged -->
-</div>
-<script>
-function toggleTheme(){
-const dark = document.documentElement.style.getPropertyValue('--bg') === '#0b0b0b';
-if(!dark){
-document.documentElement.style.setProperty('--bg','#0b0b0b');
-document.body.style.background='#070707';
-document.body.style.color='#e6eef9';
-} else {
-document.documentElement.style.setProperty('--bg','#f7f9fc');
-document.body.style.background='var(--bg)';
-document.body.style.color='#111';
-}
-}
-</script>
-</body>
-</html> • ORCID: <a href="https://orcid.org/0009-0002-3777-3560" target="_blank">0009-0002-3777-
-3560</a></p>
-</div>
-</div>
-<div style="text-align:right">
-<div class="controls">
-<a class="btn" onclick="window.print()">Print / Save PDF</a>
-<a class="btn" style="background:#111" onclick="toggleTheme()">Toggle Dark</a>
-</div>
-</div>
-</header>
-<div class="grid">
+<div class="layout">
 <main>
-<section>
-<div class="section-title"><h2>About</h2><span class="muted">Quick summary</span></div
->
-<p class="muted">Assistant Dean of Placements & Internships and Assistant Professor wi
-th experience in multiple engineering colleges. Research interests: Machine Learning, Federated
-Learning, Medical Imaging, Soft Computing.</p>
+<section class="panel">
+<h2>Professional Summary</h2>
+<p>Computer Science and Engineering academic with experience in teaching, student mentoring, academic coordination, placements and internships. Research interests include Deep Learning, Federated Learning, Multimodal Learning and AI-enabled medical image analysis, with a focus on privacy-aware approaches for healthcare applications.</p>
 </section>
-<section>
-<div class="section-title"><h2>Education</h2><span class="muted">Degrees & milestones<
-/span></div>
-<table>
-<tr><th>Course</th><th>Institution</th><th>Year / Notes</th></tr>
-<tr><td>Ph.D. in Machine Learning</td><td>Chaitanya (Deemed to be University), Hyder
-abad</td><td>Registered 2022 — Thesis submitted 28 Aug 2025</td></tr>
-<tr><td>M.Tech (Software Engineering)</td><td>Ganapathi Engineering College, Waranga
-l</td><td> 73.56% (Distinction)</td></tr>
-<tr><td>B.Tech (CSE)</td><td>Kakatiya Institute of Technology & Science (Kakatiya Un
-iversity)</td><td>61.44% (First Division)</td></tr>
-<tr><td>Diploma</td><td>Govt. Polytechnic, Warangal</td><td>60.29% (First Division)<
-/td></tr>
-<tr><td>School</td><td>St. Thomas Grammar High School, Warangal</td><td>79.83% (Dist
-inction)</td></tr>
-</table>
+<section class="panel">
+<h2>Education</h2>
+<div class="role"><h3>Ph.D. — Machine Learning</h3><div>Chaitanya (Deemed to be University), Hyderabad</div><div class="date">Completed / awarded: May 2026</div><p class="muted">Thesis: <em>Federated Learning for the Early Detection and Diagnosis of Neurodegenerative Diseases</em></p></div>
+<div class="role"><h3>M.Tech — Software Engineering</h3><div>Ganapathi Engineering College, Warangal</div><div class="date">73.56% · Distinction</div></div>
+<div class="role"><h3>B.Tech — Computer Science and Engineering</h3><div>Kakatiya Institute of Technology & Science, Kakatiya University</div><div class="date">61.44% · First Division</div></div>
+<div class="role"><h3>Diploma</h3><div>Government Polytechnic, Warangal</div><div class="date">60.29% · First Division</div></div>
+<div class="role"><h3>Schooling</h3><div>St. Thomas Grammar High School, Warangal</div><div class="date">79.83% · Distinction</div></div>
 </section>
-<section>
-<div class="section-title"><h2>Experience</h2><span class="muted">Selected roles</span
-></div>
+<section class="panel">
+<h2>Professional Experience</h2>
+<div class="role"><h3>Assistant Professor — Department of CSE</h3><div>National Institute of Technology Patna</div><div class="date">Current appointment</div><p class="muted">Teaching, research, student mentoring and academic responsibilities in Computer Science and Engineering.</p></div>
+<div class="role"><h3>Assistant Professor & Assistant Dean — Placements and Internships</h3><div>SR University, Warangal</div><p class="muted">Teaching and academic coordination, placement and internship activities, student career support and institutional engagement.</p></div>
+<div class="role"><h3>Assistant Professor</h3><div>CMR Institute of Technology, Medchal</div><div class="date">2023–2024</div></div>
+<div class="role"><h3>Assistant Professor</h3><div>Kakatiya Institute of Technology & Science</div><div class="date">2021–2023</div></div>
+<div class="role"><h3>Assistant Professor</h3><div>SVS Engineering College</div><div class="date">2015–2021</div></div>
+</section>
+<section class="panel">
+<h2>Research Interests</h2>
+<div class="chips"><span class="chip">Artificial Intelligence</span><span class="chip">Deep Learning</span><span class="chip">Federated Learning</span><span class="chip">Multimodal Learning</span><span class="chip">Medical Image Analysis</span><span class="chip">Explainable AI</span><span class="chip">Privacy-Preserving Healthcare</span><span class="chip">Soft Computing</span><span class="chip">Cloud Computing</span></div>
+</section>
+<section class="panel">
+<h2>Selected Publications</h2>
 <ul>
-<li><strong>SR University</strong> — Assistant Dean (Placements & Internships), Assi
-stant Professor (Present)</li>
-<li><strong>CMR Institute of Technology, Medchal</strong> — Assistant Professor (202
-3–2024)</li>
-<li><strong>Kakatiya Institute of Technology & Science</strong> — Assistant Professo
-r (2021–2023)</li>
-<li><strong>SVS Engineering College</strong> — Assistant Professor (2015–2021)</li>
+<li><em>Automated Machine Learning for Healthcare</em>, Springer Nature, Chapter 3. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_3" target="_blank" rel="noopener">View publication</a></li>
+<li><em>Neuro-Fuzzy Systems: Neural Networks and Fuzzy Logic Integration</em>, Springer Nature, Chapter 4. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_4" target="_blank" rel="noopener">View publication</a></li>
+<li><em>Machine Learning and Artificial Intelligence in IoT</em>, Springer Nature, Chapter 5. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_5" target="_blank" rel="noopener">View publication</a></li>
+<li><em>Soft Computing Approaches in Robotics</em>, Springer Nature, Chapter 6. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_6" target="_blank" rel="noopener">View publication</a></li>
+<li><em>Neuromorphic Computing</em>, Springer Nature, Chapter 7. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_7" target="_blank" rel="noopener">View publication</a></li>
+<li><em>Sustainability in the Internet of Things</em>, Springer Nature, Chapter 8. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_8" target="_blank" rel="noopener">View publication</a></li>
+<li><em>An Approach in Using Mobile Relay with Less Energy Consumption in WSNs</em>, IJSETR. <a href="https://ijsrcseit.com/CSEIT1833423" target="_blank" rel="noopener">View paper</a></li>
+<li><em>Efficient Deployment of Communication Technicalities in Global Higher Education using Fuzzy Inference Logic</em>, conference/chapter contribution.</li>
+</ul>
+<p class="note">This section retains selected publication records and links available in the existing website. Add DOI/links for any additional journal, IEEE or accepted SCIE papers to expand the list accurately.</p>
+</section>
+<section class="panel">
+<h2>Academic Projects</h2>
+<ul><li><strong>B.Tech:</strong> Web Password Hashing.</li><li><strong>M.Tech:</strong> Mobile Relay Configuration in Data-Intensive Wireless Sensor Networks.</li></ul>
+</section>
+<section class="panel">
+<h2>Technical Skills</h2>
+<div class="chips"><span class="chip">Deep Learning</span><span class="chip">Machine Learning</span><span class="chip">Federated Learning</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">.NET</span><span class="chip">Cloud Computing</span><span class="chip">AI / Explainable AI</span></div>
+</section>
+<section class="panel">
+<h2>Certifications</h2>
+<p><strong>Saylor Academy:</strong></p>
+<ul>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0894921812YS" target="_blank" rel="noopener">CS101 — Introduction to Computer Science I</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=3332252431YS" target="_blank" rel="noopener">CS102 — Introduction to Computer Science II</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=4805742938YS" target="_blank" rel="noopener">CS105 — Introduction to Python</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0802974580YS" target="_blank" rel="noopener">CS107 — C++ Programming</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=4607571928YS" target="_blank" rel="noopener">CS201 — Elementary Data Structures</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=6092500570YS" target="_blank" rel="noopener">CS260 — Intro to Cryptography & Network Security</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=8771199202YS" target="_blank" rel="noopener">CS301 — Computer Architecture</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=2966969257YS" target="_blank" rel="noopener">CS401 — Operating Systems</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0328787650YS" target="_blank" rel="noopener">CS402 — Computer Communications and Networks</a></li>
+<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0489264624YS" target="_blank" rel="noopener">CS406 — Information Security</a></li>
+</ul>
+<p><strong>Coursera:</strong></p>
+<ul>
+<li><a href="https://coursera.org/verify/H03KAU3ZO8EN" target="_blank" rel="noopener">Responsible AI: Applying AI Principles with Google Cloud</a></li>
+<li><a href="https://coursera.org/verify/5E6VH33EG6VQ" target="_blank" rel="noopener">IoT Devices — University of Illinois Urbana-Champaign</a></li>
+<li><a href="https://coursera.org/verify/P96S8V009G2M" target="_blank" rel="noopener">Introduction to Generative AI — Google Cloud</a></li>
 </ul>
 </section>
-<section>
-<div class="section-title"><h2>Projects</h2><span class="muted">Academic projects</spa
-n></div>
-<ul>
-<li><strong>B.Tech:</strong> Web Password Hashing</li>
-<li><strong>M.Tech:</strong> Mobile Relay Configuration in Data-Intensive WSNs</li>
-</ul>
-</section>
-<section>
-<div class="section-title"><h2>Publications</h2><span class="muted">Book chapters & pa
-pers (selected)</span></div>
-<ul>
-<li>Chapter 3 — <em>Automated Machine Learning for Healthcare</em>. Springer Nature.
-— <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_3" target="_blank">link<
-/a></li>
-<li>Chapter 4 — <em>Neuro-Fuzzy Systems: Neural Networks and Fuzzy Logic Integration
-</em>. Springer Nature. — <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_4
-" target="_blank">link</a></li>
-<li>Chapter 5 — <em>Machine Learning and Artificial Intelligence in IoT</em>. Spring
-er Nature. — <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_5" target="_bl
-ank">link</a></li>
-<li>Chapter 6 — <em>Soft Computing Approaches in Robotics</em>. Springer Nature. — <
-a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_6" target="_blank">link</a><
-/li>
-<li>Chapter 7 — <em>Neuromorphic Computing</em>. Springer Nature. — <a href="https:/
-/link.springer.com/chapter/10.1007/978-981-97-8533-9_7" target="_blank">link</a></li>
-<li>Chapter 8 — <em>Sustainability in the Internet of Things</em>. Springer Nature.
-— <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_8" target="_blank">link</
-a></li>
-<li>Journal Paper — <em>An Approach in Using Mobile Relay with Less Energy Consumpti
-on in WSNs</em>. IJSETR — <a href="https://ijsrcseit.com/CSEIT1833423" target="_blank">link</a><
-/li>
-<li>Other: Efficient Deployment of Communication Technicalities in Global Higher Edu
-cation using Fuzzy Inference Logic (conference/chapter)</li>
-</ul>
-</section>
-<section>
-<div class="section-title"><h2>Certifications</h2><span class="muted">Saylor Academy &
-Coursera</span></div>
-<ul>
-<li><strong>Saylor Academy (selected certificates)</strong> — verify links below:
-<ul>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0894
-921812YS" target="_blank">CS101: Introduction to Computer Science I</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=3332
-252431YS" target="_blank">CS102: Introduction to Computer Science II</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=4805
-742938YS" target="_blank">CS105: Introduction to Python</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0802
-974580YS" target="_blank">CS107: C++ Programming</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=4607
-571928YS" target="_blank">CS201: Elementary Data Structures</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=6092
-500570YS" target="_blank">CS260: Intro to Cryptography & Network Security</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=8771
-199202YS" target="_blank">CS301: Computer Architecture</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=2966
-969257YS" target="_blank">CS401: Operating Systems</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0328
-787650YS" target="_blank">CS402: Computer Communications and Networks</a></li>
-<li><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0489
-264624YS" target="_blank">CS406: Information Security</a></li>
-</ul>
-</li>
-<li><strong>Coursera</strong> — verify links:
-<ul>
-<li><a href="https://coursera.org/verify/H03KAU3ZO8EN" target="_blank">Responsib
-le AI: Applying AI Principles with Google Cloud</a></li>
-<li><a href="https://coursera.org/verify/5E6VH33EG6VQ" target="_blank">IoT Devic
-es — University of Illinois Urbana-Champaign</a></li>
-<li><a href="https://coursera.org/verify/P96S8V009G2M" target="_blank">Introduct
-ion to Generative AI — Google Cloud</a></li>
-</ul>
-</li>
-</ul>
-</section>
-<section>
-<div class="section-title"><h2>Honors & Activities</h2><span class="muted">Selected hi
-ghlights</span></div>
-<ul>
-<li>International internship coordinator for California students</li>
-<li>Organized national workshops & college tech events</li>
-<li>Two-Day National Level Workshop on Information Retrieval Systems — Jan 2013</li>
-<li>Paper published in IJSETR (Impact Factor 3.59)</li>
-</ul>
-</section>
-<section>
-<div class="section-title"><h2>Other</h2><span class="muted">Skills, Hobbies & Persona
-l details</span></div>
-<p class="muted"><strong>Technical Skills:</strong> C, C++, .NET, AutoCAD (Civil), Mac
-hine Learning</p>
-<p class="muted"><strong>Hobbies:</strong> Skating · Chess · Swimming · Cricket · GTA
-Online</p>
-<p class="muted"><strong>Languages:</strong> English, Telugu, Hindi (read/write)</p>
-<p class="muted"><strong>Father's Name:</strong> Rajendra Prasad (Retd. S.I. of Police
-)</p>
+<section class="panel">
+<h2>Academic Activities</h2>
+<ul><li>International internship coordination for students from California.</li><li>Organized national workshops and college technology events.</li><li>Participated in a two-day national-level workshop on Information Retrieval Systems (January 2013).</li></ul>
 </section>
 </main>
-<aside class="right-col">
-<div style="margin-bottom:18px">
-<div class="section-title"><h2>Contact</h2><span class="muted">Reach out</span></div>
-<div class="contact-row">
-<div><strong>Phone</strong><br><span class="muted">7013810556</span></div>
-<div><strong>Email</strong><br><a href="mailto:yamjala99@gmail.com">yamjala99@gmail.
-com</a> • <a href="mailto:ARJUNSAGAR2000@gmail.com">ARJUNSAGAR2000@gmail.com</a></div>
-<div><strong>LinkedIn</strong><br>
-<a class="link-btn" href="https://www.linkedin.com/in/arjun-sagar-y-a40915317/" ta
-rget="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" style="width:16px;he
-ight:16px;vertical-align:middle"><path d="M34,17c0,9.4-7.6,17-17,17S0,26.4,0,17S7.6,0,17,0S34,7.
-6,34,17z" fill="#0a66c2"/><path d="M26,26h-4.4v-6.5c0-1.6-0.6-2.7-2.1-2.7c-1.2,0-1.9,0.8-2.3,1.6
-c-0.1,0.3-0.1,0.7-0.1,1.1V26h-4.4c0,0,0.1-11.7,0-12.9h4.4v1.8c0.6-0.9,1.6-2.2,3.8-2.2c2.8,0,5,1.
-8,5,5.7V26z M10,11.1c-1.5,0-2.5-1-2.5-2.3c0-1.3,1-2.3,2.6-2.3c1.5,0,2.5,1,2.5,2.3C12.5,10.1,11.5
-,11.1,10,11.1z M7.8,26h4.5V13.1H7.8V26z" fill="#fff"/></svg>
-View profile
-</a>
-</div>
-<div><strong>ORCID</strong><br><a class="link-btn orcid" href="https://orcid.org/000
-9-0002-3777-3560" target="_blank">ORCID: 0009-0002-3777-3560</a></div>
-<div><strong>Scopus ID</strong><br><span class="mono">59658674600</span></div>
-<div><strong>Publications & Certificates</strong><br><a href="#publications" class="
-small">See Publications & Certifications in the main section</a></div>
-</div>
-</div>
-<div style="margin-top:18px">
-<div class="section-title"><h2>Quick Links</h2><span class="muted">One-click access</s
-pan></div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_3" target="_bla
-nk" class="small">Springer — Chapter 3</a>
-<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_4" target="_bla
-nk" class="small">Springer — Chapter 4</a>
-<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_5" target="_bla
-nk" class="small">Springer — Chapter 5</a>
-<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_6" target="_bla
-nk" class="small">Springer — Chapter 6</a>
-<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_7" target="_bla
-nk" class="small">Springer — Chapter 7</a>
-<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_8" target="_bla
-nk" class="small">Springer — Chapter 8</a>
-<a href="https://ijsrcseit.com/CSEIT1833423" target="_blank" class="small">IJSETR Pa
-per</a>
-<a href="https://coursera.org/verify/H03KAU3ZO8EN" target="_blank" class="small">Cou
-rsera — Responsible AI</a>
-</div>
-</div>
+<aside>
+<section class="panel">
+<h2>Contact</h2>
+<div class="contact-item"><strong>Email</strong><a href="mailto:yamjala99@gmail.com">yamjala99@gmail.com</a><br><a href="mailto:ARJUNSAGAR2000@gmail.com">ARJUNSAGAR2000@gmail.com</a></div>
+<div class="contact-item"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/arjun-sagar-y-a40915317/" target="_blank" rel="noopener">linkedin.com/in/arjun-sagar-y-a40915317</a></div>
+<div class="contact-item"><strong>ORCID</strong><a href="https://orcid.org/0009-0002-3777-3560" target="_blank" rel="noopener">0009-0002-3777-3560</a></div>
+<div class="contact-item"><strong>Scopus Author ID</strong><a href="https://www.scopus.com/authid/detail.uri?authorId=59658674600" target="_blank" rel="noopener">59658674600</a></div>
+</section>
+<section class="panel quicklinks">
+<h2>Quick Links</h2>
+<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_3" target="_blank" rel="noopener">Springer Nature — Chapter 3</a>
+<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_4" target="_blank" rel="noopener">Springer Nature — Chapter 4</a>
+<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_5" target="_blank" rel="noopener">Springer Nature — Chapter 5</a>
+<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_6" target="_blank" rel="noopener">Springer Nature — Chapter 6</a>
+<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_7" target="_blank" rel="noopener">Springer Nature — Chapter 7</a>
+<a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_8" target="_blank" rel="noopener">Springer Nature — Chapter 8</a>
+<a href="https://ijsrcseit.com/CSEIT1833423" target="_blank" rel="noopener">IJSETR paper</a>
+</section>
+<section class="panel">
+<h2>Languages</h2><p>English · Telugu · Hindi (reading and writing)</p>
+</section>
 </aside>
 </div>
-<footer>Built from your uploaded resume. Edit or ask me to make it ATS-friendly.</footer>
+<footer>Academic profile of Dr. Y. Arjun Sagar Yamjala · <a href="https://github.com/Arjunyam/Arjunweb">View source on GitHub</a></footer>
 </div>
-<script>
-function toggleTheme(){
-const dark = document.documentElement.style.getPropertyValue('--bg') === '#0b0b0b';
-if(!dark){
-document.documentElement.style.setProperty('--bg','#0b0b0b');
-document.body.style.background='#070707';
-document.body.style.color='#e6eef9';
-} else {
-document.documentElement.style.setProperty('--bg','#f7f9fc');
-document.body.style.background='var(--bg)';
-document.body.style.color='#111';
-}
-}
-</script>
 </body>
 </html>
