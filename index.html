@@ -120,9 +120,114 @@ aside{position:sticky;top:18px}
   tr{break-inside:avoid!important;page-break-inside:avoid!important}
 }
 
+
+.print-resume{display:none}
+@page{size:A4;margin:12mm 13mm}
+@media print{
+html,body{width:210mm!important;background:#fff!important;color:#263342!important;font:8.5pt/1.28 Arial,Helvetica,sans-serif!important}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body>.container{display:none!important}.print-resume{display:block!important;width:100%!important}
+.resume-page{position:relative;min-height:273mm;padding:0 0 12mm;break-after:page;page-break-after:always}
+.resume-page:last-child{break-after:auto;page-break-after:auto}
+.resume-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 0 8px}
+.resume-head-copy{flex:1;min-width:0;font-size:7.8pt;line-height:1.42}
+.resume-head h1{font-size:19pt;line-height:1.1;letter-spacing:.3px;color:#19364f;margin:0 0 4px}
+.resume-sub{font-size:9pt;font-weight:700;color:#31546d;margin-bottom:3px}
+.resume-photo{width:35mm;height:39mm;object-fit:cover;object-position:center top}
+.resume-rule{height:3px;background:#19364f;margin:0 0 9px}
+.print-resume h2{font-size:10.3pt;font-weight:800;color:#1e405b;margin:8px 0 6px;padding:0 0 4px;border:0;border-bottom:2px solid #398e91;letter-spacing:.25px}
+.print-resume h2:before{display:none}.print-resume p{margin:4px 5px 7px}
+.resume-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:7.4pt;line-height:1.24;margin:4px 0 8px}
+.resume-table th{background:#1d3e59;color:#fff;text-align:left;font-size:7.2pt;padding:5px;border:1px solid #d0d8e0}
+.resume-table td{padding:4.5px 5px;border:1px solid #d2d9e1;vertical-align:middle;overflow-wrap:anywhere}
+.resume-table tbody tr:nth-child(even){background:#eaf0f5}
+.resume-table:not(.experience-table):not(.papers-table) th:nth-child(1){width:27%}
+.resume-table:not(.experience-table):not(.papers-table) th:nth-child(2){width:48%}
+.resume-table:not(.experience-table):not(.papers-table) th:nth-child(3){width:25%}
+.experience-table td:first-child{width:45%}.papers-table td:first-child{width:49%}
+.print-resume ul{margin:3px 0 7px;padding-left:17px}.print-resume li{margin:4px 0;padding-left:0}
+.resume-note{font-size:7.3pt;font-style:italic;margin-top:8px!important}
+.resume-footer{position:absolute;left:0;right:0;bottom:0;border-top:1px solid #d9e0e6;padding-top:4px;display:flex;justify-content:space-between;color:#77818c;font-size:7pt}
+}
 </style>
 </head>
 <body>
+
+<div class="print-resume">
+<section class="resume-page">
+<div class="resume-head"><div class="resume-head-copy">
+<h1>DR. ARJUN SAGAR YAMJALA</h1><div class="resume-sub">Assistant Professor | Computer Science &amp; Engineering | AI &amp; ML</div>
+<div>Current Institution: Kamala Institute of Technology &amp; Science (KITS), Huzurabad, Telangana</div>
+<div>Mobile: 7013810556 &nbsp;|&nbsp; Email: yamjala99@gmail.com</div>
+<div>LinkedIn: linkedin.com/in/arjun-sagar-y-a40915317</div><div>GitHub: arjunyam.github.io/Arjunweb/</div>
+<div>ORCID: 0009-0002-3777-3560 &nbsp;|&nbsp; Scopus Author ID: 59658674600</div>
+</div><img src="profile.png" alt="Dr. Arjun Sagar Yamjala" class="resume-photo"></div>
+<div class="resume-rule"></div>
+<h2>PROFESSIONAL PROFILE</h2>
+<p>Academic professional and researcher in Computer Science and Engineering with experience in teaching, research, academic coordination, student mentoring, placements and internships. Ph.D. in Deep Learning completed in May 2026. Research interests include Deep Learning, Federated Learning, Medical Imaging, Multimodal Learning, Explainable AI and Soft Computing.</p>
+<h2>ACADEMIC QUALIFICATIONS</h2>
+<table class="resume-table"><thead><tr><th>Qualification</th><th>University / Institution</th><th>Year / Result</th></tr></thead><tbody>
+<tr><td><b>Postdoctoral Research (Registered)</b></td><td>SR University, Warangal</td><td>Registered August 2026 – Pursuing</td></tr>
+<tr><td><b>Ph.D. – Deep Learning</b></td><td>Chaitanya (Deemed to be) University, Hyderabad</td><td>Completed May 2026</td></tr>
+<tr><td><b>M.Tech. – Software Engineering</b></td><td>Ganapathi Engineering College, Warangal</td><td>2014 | 73.56% | Distinction</td></tr>
+<tr><td><b>B.Tech. – Computer Science &amp; Engineering</b></td><td>Kakatiya Institute of Technology &amp; Science, Kakatiya University, Warangal</td><td>61.44% | First Division</td></tr>
+<tr><td><b>Diploma</b></td><td>Government Polytechnic, Warangal</td><td>60.29% | First Division</td></tr>
+<tr><td><b>SSC</b></td><td>St. Thomas Grammar High School, Warangal</td><td>79.83%</td></tr>
+</tbody></table>
+<h2>ACADEMIC &amp; PROFESSIONAL EXPERIENCE</h2>
+<table class="resume-table experience-table"><tbody>
+<tr><td><b>Kamala Institute of Technology &amp; Science (KITS), Huzurabad</b></td><td>Assistant Professor – Department of AI&amp;ML | 2026 · Present</td></tr>
+<tr><td><b>SR University, Warangal</b></td><td>Assistant Professor; Assistant Dean – Placements &amp; Internships</td></tr>
+<tr><td><b>CMR Institute of Technology, Medchal</b></td><td>Assistant Professor | 2023–2024</td></tr>
+<tr><td><b>Kakatiya Institute of Technology &amp; Science, Warangal</b></td><td>Assistant Professor | 2021–2023</td></tr>
+<tr><td><b>SVS Engineering College</b></td><td>Assistant Professor | 2015–2021</td></tr>
+</tbody></table>
+<h2>RESEARCH INTERESTS &amp; TEACHING AREAS</h2>
+<p><b>Research:</b> Deep Learning, Federated Learning, Medical Imaging, Multimodal Learning, Explainable AI, Soft Computing and Edge–Cloud Computing.</p>
+<p><b>Teaching:</b> C, C++, Java, Python, Artificial Intelligence, Machine Learning, Deep Learning and Computer Science foundations.</p>
+<div class="resume-footer"><span>Dr. Arjun Sagar Yamjala | Academic Resume</span><span>Page 1</span></div>
+</section>
+<section class="resume-page resume-page-two">
+<h2>SELECTED SCIE / SCI JOURNAL PAPERS</h2>
+<table class="resume-table papers-table"><thead><tr><th>Paper</th><th>Journal / Status</th></tr></thead><tbody>
+<tr><td><b>Energy-Aware Dynamic Task Offloading and Resource Allocation with Optimized Energy Harvesting in Edge-Cloud Environments</b></td><td>Sustainable Computing: Informatics and Systems (Elsevier) | Accepted | SCIE Q1 | Manuscript ID: SUSCOM-D-26-00051R4</td></tr>
+<tr><td><b>SHAP-Enhanced Resource Allocation for VM Scheduling in Cloud Computing</b></td><td>Accepted SCIE paper</td></tr>
+<tr><td><b>Cyber-Resilient Load Frequency Control Using Correntropy Filtering</b></td><td>Applied Energy | Submitted 15 August 2026 | SCIE</td></tr>
+<tr><td><b>Retinal OCT Disease Classification Using Explainable AI</b></td><td>Submitted September 2025 | SCIE | Journal details not specified</td></tr>
+</tbody></table>
+<h2>OTHER JOURNAL PUBLICATIONS</h2>
+<ul>
+<li><b>Privacy-Preserving Federated Learning Models for Accurate Diagnosis of Neurodegenerative Diseases in Distributed Healthcare Systems.</b> International Journal of Intelligent Systems and Applications in Engineering, 2024, 12(17s), 1000–1010.</li>
+<li><b>Wavelet-Based Radiographic Feature Fusion with Multi-Head Attention for Early Detection of Neurodegenerative Disorders.</b> Journal of Information Systems Engineering and Management, 2024, Vol. 9, No. 4s.</li>
+<li><b>An Approach in Using Mobile Relay with Less Energy Consumption in WSNs.</b></li>
+</ul>
+<h2>CONFERENCE PUBLICATIONS</h2>
+<ul>
+<li><b>Meta-Adaptive Few-Shot Learning Framework for Robust Classification of Rare and Imbalanced Data Scenarios.</b> ACT 2026, Hyderabad, pp. 636–641.</li>
+<li><b>AI-Driven Early Diagnosis of Neurodegenerative Disorders: Challenges, Models, and Future Directions.</b></li>
+<li>IEEE Conference Paper – Document ID: 11318677.</li><li>IEEE Conference Paper – Document ID: 11318790.</li>
+</ul>
+<h2>SPRINGER NATURE BOOK CHAPTERS</h2>
+<ul>
+<li>Automated Machine Learning for Healthcare (2025).</li>
+<li>Neuro-Fuzzy Systems: Neural Networks and Fuzzy Logic Integration in Soft Computing (2025).</li>
+<li>Machine Learning and Artificial Intelligence in IoT: Integration Techniques and Applications (2025).</li>
+<li>Soft Computing Approaches in Robotics: State-of-the-Art and Future Directions.</li>
+<li>Neuromorphic Computing: Bridging the Gap Between Neuroscience and Artificial Intelligence (2025).</li>
+<li>Sustainability in the Internet of Things: Environmental Impacts and Green Technologies (2025).</li>
+</ul>
+<h2>TECHNICAL SKILLS, PROJECTS &amp; CERTIFICATIONS</h2>
+<p><b>Programming:</b> C, C++, .NET. <b>Research:</b> Deep Learning, Federated Learning, Medical Imaging, Multimodal Learning and Soft Computing.</p>
+<p><b>Academic Projects:</b> B.Tech – Web Password Hashing; M.Tech – Mobile Relay Configuration in Data-Intensive Wireless Sensor Networks (WSNs).</p>
+<p><b>Saylor Academy:</b> CS101, CS102, CS105, CS107, CS201, CS260, CS301, CS401, CS402 and CS406.</p>
+<p><b>Coursera:</b> Responsible AI: Applying AI Principles with Google Cloud; IoT Devices – University of Illinois Urbana-Champaign; Introduction to Generative AI – Google Cloud.</p>
+<h2>ACADEMIC ACTIVITIES &amp; PERSONAL DETAILS</h2>
+<p>International Internship Coordinator for California students; participated in a two-day National Level Workshop on Information Retrieval Systems (January 2013); participated in organizing Techno Plexus-10 (2010) and Techno Plexus-09 (2009).</p>
+<p><b>Languages:</b> English, Telugu and Hindi.</p>
+<p class="resume-note">Publication titles and statuses are listed based on the latest details provided. Journal names for the Retinal OCT submission have intentionally been left unspecified.</p>
+<div class="resume-footer"><span>Dr. Arjun Sagar Yamjala | Academic Resume</span><span>Page 2</span></div>
+</section></div>
+
 <div class="container">
 <header>
 <div class="hero">
