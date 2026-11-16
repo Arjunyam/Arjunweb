@@ -48,6 +48,34 @@ aside{position:sticky;top:18px}
 @media(max-width:430px){.hero{display:block}.photo{margin-bottom:15px}.photo img{width:100px;height:100px}.ids{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 @media print{body{background:#fff;font-size:11pt}.container{max-width:none;margin:0;padding:0}header,.panel{box-shadow:none;backdrop-filter:none}.layout{grid-template-columns:2fr 1fr;gap:12px}.panel{break-inside:avoid;margin-bottom:10px}a{color:inherit}.actions{display:none}aside{position:static}}
+
+/* Animated research showcase */
+.research-banner{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(180px,.7fr);gap:22px;align-items:center;margin-top:22px;padding:25px 28px;border-radius:22px;color:#fff;background:linear-gradient(115deg,#142b5b,#315fd5 55%,#7354d8);box-shadow:0 18px 42px rgba(48,75,164,.18)}
+.research-banner:before,.research-banner:after{content:"";position:absolute;z-index:-1;border-radius:50%;filter:blur(1px);animation:floatGlow 9s ease-in-out infinite alternate}
+.research-banner:before{width:220px;height:220px;right:12%;top:-145px;background:rgba(61,222,219,.3)}
+.research-banner:after{width:170px;height:170px;right:-60px;bottom:-105px;background:rgba(190,157,255,.34);animation-delay:-4s}
+.research-kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#cbd9ff;font-weight:800}
+.research-banner h2{border:0;padding:0;margin:7px 0 8px;color:#fff;font-size:clamp(20px,3vw,27px)}
+.research-banner h2:before{display:none}
+.research-banner p{margin:0;color:#e4ebff;font-size:14px;max-width:680px}
+.focus-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.focus-tags span{font-size:11px;padding:5px 9px;border:1px solid #ffffff55;border-radius:999px;background:#ffffff16;color:#fff}
+.research-art{justify-self:end;width:min(100%,220px);aspect-ratio:1;display:grid;place-items:center;position:relative}
+.research-orbit{position:absolute;width:94%;height:94%;border:1px solid #ffffff55;border-radius:50%;animation:orbitSpin 22s linear infinite}
+.research-orbit:before,.research-orbit:after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:#58e0d4;box-shadow:0 0 18px #58e0d4}
+.research-orbit:before{top:14%;left:18%}.research-orbit:after{right:7%;bottom:24%;background:#d8c4ff;box-shadow:0 0 18px #d8c4ff}
+.research-core{width:56%;height:56%;border-radius:28%;display:grid;place-items:center;background:linear-gradient(145deg,#ffffff32,#ffffff0c);border:1px solid #ffffff65;box-shadow:inset 0 0 25px #ffffff18,0 12px 30px #081b4c55;backdrop-filter:blur(8px);font-size:37px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:17px 0 24px}
+.stat-card{padding:17px 16px;border:1px solid #e4e9f5;border-radius:17px;background:rgba(255,255,255,.9);box-shadow:0 9px 24px rgba(31,52,93,.055);text-align:center;transition:transform .22s,box-shadow .22s}
+.stat-card:hover{transform:translateY(-4px);box-shadow:0 15px 30px rgba(49,75,160,.12)}
+.stat-number{display:block;font-size:clamp(25px,3vw,34px);font-weight:850;letter-spacing:-1px;line-height:1.2;background:linear-gradient(100deg,#315fd5,#7957df,#20aebc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat-label{display:block;margin-top:5px;color:#71809a;font-size:11px;line-height:1.4;font-weight:750;letter-spacing:.06em;text-transform:uppercase}
+@keyframes floatGlow{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-22px,18px,0) scale(1.12)}}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+@media(max-width:700px){.research-banner{grid-template-columns:1fr;padding:22px}.research-art{position:absolute;right:-22px;bottom:-42px;width:140px;opacity:.45}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat-card{padding:14px 9px}}
+@media(prefers-reduced-motion:reduce){.research-banner:before,.research-banner:after,.research-orbit{animation:none}}
+@media print{.research-banner,.stats-grid{break-inside:avoid}.research-orbit{animation:none}}
+
 </style>
 </head>
 <body>
@@ -63,6 +91,22 @@ aside{position:sticky;top:18px}
 </div>
 </div>
 </header>
+
+<section class="research-banner" aria-label="Research profile">
+  <div>
+    <div class="research-kicker">Academic profile · Research & innovation</div>
+    <h2>Advancing AI for meaningful real-world impact</h2>
+    <p>Exploring trustworthy and privacy-aware artificial intelligence, deep learning and multimodal methods—especially for healthcare, medical imaging and intelligent systems.</p>
+    <div class="focus-tags"><span>Deep Learning</span><span>Federated AI</span><span>Medical Imaging</span><span>Explainable AI</span></div>
+  </div>
+  <div class="research-art" aria-hidden="true"><div class="research-orbit"></div><div class="research-core">✦</div></div>
+</section>
+<section class="stats-grid" aria-label="Publication highlights">
+  <div class="stat-card"><span class="stat-number" data-count="3">3</span><span class="stat-label">SCIE manuscripts<br>1 online · 2 submitted</span></div>
+  <div class="stat-card"><span class="stat-number" data-count="2">2</span><span class="stat-label">Scopus journal<br>articles listed</span></div>
+  <div class="stat-card"><span class="stat-number" data-count="4">4</span><span class="stat-label">Conference<br>papers listed</span></div>
+  <div class="stat-card"><span class="stat-number" data-count="6">6</span><span class="stat-label">Springer Nature<br>book chapters listed</span></div>
+</section>
 <div class="layout">
 <main>
 <section class="panel">
@@ -221,5 +265,25 @@ aside{position:sticky;top:18px}
 </div>
 <footer>Academic profile of Dr. Arjun Sagar Yamjala · <a href="https://github.com/Arjunyam/Arjunweb">View source on GitHub</a></footer>
 </div>
+
+<script>
+(function(){
+  const items=document.querySelectorAll('.stat-number[data-count]');
+  if(!items.length)return;
+  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  items.forEach(function(el){
+    const target=Number(el.getAttribute('data-count'))||0;
+    if(reduce){el.textContent=String(target);return;}
+    const duration=850,start=performance.now();
+    function tick(now){
+      const p=Math.min(1,(now-start)/duration);
+      const eased=1-Math.pow(1-p,3);
+      el.textContent=String(Math.round(target*eased));
+      if(p<1)requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+})();
+</script>
 </body>
 </html>
