@@ -76,6 +76,50 @@ aside{position:sticky;top:18px}
 @media(prefers-reduced-motion:reduce){.research-banner:before,.research-banner:after,.research-orbit{animation:none}}
 @media print{.research-banner,.stats-grid{break-inside:avoid}.research-orbit{animation:none}}
 
+
+/* Clean, conventional A4 resume output */
+@page{size:A4;margin:14mm 15mm}
+@media print{
+  html,body{width:auto!important;background:#fff!important;color:#202938!important;font:9.5pt/1.42 Arial,Helvetica,sans-serif!important}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .container{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+  header{background:#fff!important;color:#17243b!important;border:0!important;border-bottom:2px solid #263f70!important;border-radius:0!important;padding:0 0 12px!important;margin:0 0 12px!important;box-shadow:none!important;overflow:visible!important}
+  header:before,header:after{display:none!important}
+  .hero{display:flex!important;align-items:center!important;gap:15px!important}
+  .photo img{width:82px!important;height:82px!important;border:1px solid #cbd3df!important;border-radius:4px!important;box-shadow:none!important}
+  h1{font-size:21pt!important;line-height:1.15!important;letter-spacing:0!important;color:#17243b!important;margin:0 0 5px!important}
+  .subtitle{font-size:10pt!important;color:#37465e!important;margin:0 0 5px!important}
+  .ids,.ids a{font-size:8pt!important;color:#37465e!important}
+  .actions,.research-banner,.stats-grid,footer,.quicklinks{display:none!important}
+  .layout{display:block!important;margin:0!important}
+  main{display:block!important;width:100%!important}
+  aside{position:static!important;display:block!important;width:100%!important}
+  .panel{background:#fff!important;border:0!important;border-radius:0!important;border-bottom:1px solid #d8dee8!important;padding:8px 0 9px!important;margin:0 0 7px!important;box-shadow:none!important;backdrop-filter:none!important;break-inside:auto!important;page-break-inside:auto!important}
+  .panel:hover{transform:none!important;box-shadow:none!important}
+  h2{font-size:11pt!important;color:#1d3764!important;border:0!important;border-bottom:1px solid #cbd5e1!important;padding:0 0 4px!important;margin:0 0 6px!important;gap:0!important}
+  h2:before{display:none!important}
+  h3{font-size:9.5pt!important;color:#263b5b!important;margin:7px 0 2px!important}
+  p{margin:3px 0 5px!important}
+  .role{padding-left:8px!important;margin:0 0 7px!important;border-left:2px solid #cbd5e1!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  .date,.muted,.note{font-size:8pt!important;color:#566276!important}
+  ul{margin:3px 0 5px!important;padding-left:17px!important}
+  li{margin:2px 0!important;padding-left:0!important;break-inside:avoid!important}
+  .chips{gap:4px!important}
+  .chip{background:#f3f5f8!important;color:#263b5b!important;border:1px solid #d8dee8!important;padding:2px 7px!important;font-size:8pt!important}
+  .table-wrap{overflow:visible!important;border:0!important;border-radius:0!important;width:100%!important}
+  table,.scie-table{width:100%!important;min-width:0!important;table-layout:fixed!important;font-size:7pt!important}
+  th,td{padding:4px 3px!important;overflow-wrap:anywhere!important;word-break:normal!important}
+  th{font-size:6.5pt!important;background:#f1f4f8!important;color:#34445d!important}
+  .index-label{white-space:normal!important;font-size:6.5pt!important;padding:2px 4px!important}
+  .index-summary{background:#f5f8fc!important;color:#263b5b!important;border:1px solid #d8dee8!important;padding:6px 8px!important;margin:5px 0!important;font-size:8pt!important}
+  .contact-item{margin:0 0 5px!important;font-size:8pt!important}
+  .contact-item strong{display:inline!important;color:#43516a!important;margin-right:5px!important;font-size:8pt!important}
+  .contact-item a{color:#202938!important;text-decoration:none!important}
+  a{color:#202938!important;text-decoration:none!important;overflow-wrap:anywhere!important}
+  .research-banner,.stats-grid{break-after:avoid!important}
+  tr{break-inside:avoid!important;page-break-inside:avoid!important}
+}
+
 </style>
 </head>
 <body>
