@@ -166,6 +166,9 @@ body>.container{display:none!important}.print-resume{display:block!important;wid
 @media print{.publication-list li::marker{color:#263b5b}}
 .pub-num{display:inline-block;min-width:1.7em;font-weight:800;color:#315fd5}
 @media print{.pub-num{color:#263b5b;min-width:1.6em}}
+
+.stat-link{display:block;color:inherit;text-decoration:none;cursor:pointer}
+.stat-link:hover,.stat-link:focus-visible{color:inherit;text-decoration:none;outline:2px solid #315fd5;outline-offset:3px}
 </style>
 </head>
 <body>
@@ -270,10 +273,10 @@ body>.container{display:none!important}.print-resume{display:block!important;wid
   <div class="research-art" aria-hidden="true"><div class="research-orbit"></div><div class="research-core">✦</div></div>
 </section>
 <section class="stats-grid" aria-label="Publication highlights">
-  <div class="stat-card"><span class="stat-number" data-count="3">3</span><span class="stat-label">SCIE manuscripts<br>1 online · 2 submitted</span></div>
-  <div class="stat-card"><span class="stat-number" data-count="2">2</span><span class="stat-label">Scopus journal<br>articles listed</span></div>
-  <div class="stat-card"><span class="stat-number" data-count="4">4</span><span class="stat-label">Conference<br>papers listed</span></div>
-  <div class="stat-card"><span class="stat-number" data-count="6">6</span><span class="stat-label">Springer Nature<br>book chapters listed</span></div>
+  <a class="stat-card stat-link" href="#scie-publications" aria-label="Go to SCIE journal papers"><span class="stat-number" data-count="3">3</span><span class="stat-label">SCIE manuscripts<br>1 online · 2 submitted</span></a>
+  <a class="stat-card stat-link" href="#scopus-publications" aria-label="Go to Scopus-indexed journal publications"><span class="stat-number" data-count="2">2</span><span class="stat-label">Scopus journal<br>articles listed</span></a>
+  <a class="stat-card stat-link" href="#conference-publications" aria-label="Go to conference papers"><span class="stat-number" data-count="4">4</span><span class="stat-label">Conference<br>papers listed</span></a>
+  <a class="stat-card stat-link" href="#book-chapters" aria-label="Go to Springer Nature book chapters"><span class="stat-number" data-count="6">6</span><span class="stat-label">Springer Nature<br>book chapters listed</span></a>
 </section>
 <div class="layout">
 <main>
@@ -302,7 +305,7 @@ body>.container{display:none!important}.print-resume{display:block!important;wid
 <h2>Research Interests</h2>
 <div class="chips"><span class="chip">Artificial Intelligence</span><span class="chip">Deep Learning</span><span class="chip">Federated Learning</span><span class="chip">Multimodal Learning</span><span class="chip">Medical Image Analysis</span><span class="chip">Explainable AI</span><span class="chip">Privacy-Preserving Healthcare</span><span class="chip">Soft Computing</span><span class="chip">Cloud Computing</span></div>
 </section>
-<section class="panel">
+<section class="panel" id="scie-publications">
 <h2>SCIE Journal Papers — Publication Status & Metrics (4)</h2>
 <p class="note">Journal Impact Factors and quartiles are journal-level metrics (2025 JCR data), not article-level scores. These are manuscript records; publication status is shown separately.</p>
 <div class="index-summary">SCIE journal publication: Published online in November 2026. Individual article-level Web of Science Core Collection indexing is awaiting verification.</div>
@@ -338,7 +341,7 @@ body>.container{display:none!important}.print-resume{display:block!important;wid
 </table></div>
 <p class="note">Impact Factor and quartile are journal-level metrics, not article-level scores. Quartiles may vary by JCR subject category. Verify journal coverage in Clarivate’s <a href="https://mjl.clarivate.com/home" target="_blank" rel="noopener">Master Journal List</a> and metrics in <a href="https://jcr.clarivate.com/" target="_blank" rel="noopener">Journal Citation Reports</a>.</p>
 </section>
-<section class="panel">
+<section class="panel" id="scopus-publications">
 <h2>Scopus-Indexed Journal Publications (1–2)</h2>
 <ol class="publication-list" start="1">
 <li><em>Wavelet-Based Radiographic Feature Fusion with Multi-Head Attention for Early Detection of Neurodegenerative Disorders</em>, <strong>Journal of Information Systems Engineering and Management</strong>, 9(4s), 2024. Published during the journal's Scopus coverage period. <a href="https://www.jisem-journal.com/index.php/journal/article/view/12149" target="_blank" rel="noopener">View article</a></li>
@@ -346,7 +349,7 @@ body>.container{display:none!important}.print-resume{display:block!important;wid
 </ol>
 <p class="note">Indexing is stated with reference to the publication year/coverage period; journal coverage status may change over time.</p>
 </section>
-<section class="panel">
+<section class="panel" id="conference-publications">
 <h2>International Conference Publications (1–4)</h2>
 <ol class="publication-list" start="1">
 <li><em>Meta-Adaptive Few-Shot Learning Framework for Robust Classification of Rare and Imbalanced Data Scenarios</em>, 17th International Conference on Advances in Computing, Control and Telecommunication Technologies (ACT 2026), pp. 636–641, June 2026. <a href="https://scholarprofiles.sunwayuniversity.edu.my/en/publications/meta-adaptive-few-shot-learning-framework-for-robust-classificati/" target="_blank" rel="noopener">Publication details</a></li>
@@ -355,7 +358,7 @@ body>.container{display:none!important}.print-resume{display:block!important;wid
 <li><em>AI-Driven Early Diagnosis of Neurodegenerative Disorders: Challenges, Models, and Future Directions</em>, review article, International Conference on Innovations and Trends in Engineering Technologies (ICITET 2024), Vol. 1, No. 1, pp. 35–41, published online June 2024. <a href="https://icitet.uk/" target="_blank" rel="noopener">Conference website</a>.</li>
 </ol>
 </section>
-<section class="panel">
+<section class="panel" id="book-chapters">
 <h2>Book Chapters — Springer Nature (1–6)</h2>
 <ol class="publication-list" start="1">
 <li><em>Automated Machine Learning for Healthcare</em>, Springer Nature, 2025, Chapter 3. <a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_3" target="_blank" rel="noopener">View chapter</a></li>
